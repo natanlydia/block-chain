@@ -1,0 +1,9 @@
+contract Contract {
+     uint8 public a = 100;      
+     uint16 public b = 500;     
+     uint256 public sum;  
+
+     constructor() {
+        sum = uint256(a) + uint256(b);
+    }
+}
