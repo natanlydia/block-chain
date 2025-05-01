@@ -1,0 +1,12 @@
+storage variable 
+
+Contract Example{
+   unit256 a;
+   unit256 b;
+   bool public c;
+ function store() External{
+     a = b;
+     unit x = b;
+ }
+}
+
