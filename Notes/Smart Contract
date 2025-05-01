@@ -1,0 +1,28 @@
+#Smart Contract Overview
+
+Smart contract is self-executing program or code that runs on a blockchain.
+Ethereum Virtual Machine (EVM) is a crucial component of the Ethereum blockchain that allows the execution of smart contracts.
+when deploying a contract 
+   1. complie solidity to bytecode.
+   2. send transaction containing the bytcode to EVM node.
+   3. the node calculates the address of new contract.
+Solidity is a high-level language 
+Opcode is a low-level instruction that tells the EVM what to operation to prform.
+Gas is static to Opcode that is running for ADD and MUL Gas amount is fixed for complex Opcode like SSTORE it is calculated.
+Gas is dependent on the Opcode
+Contracts are compiled to create bytcode.
+The data field contain created bycode.
+The to field is left blank to deploy a contract.
+Contract will have address, balance and runtime bytecode.
+Transaction begins at an EOA.
+EOA- (externally owned account)
+Transaction occurs sequentially.
+Transaction set a gas limit.
+Transaction send calldata targetting contract.
+Smart contracts can call each other within the one transaction.
+
+Solidity value type
+    1. unsigned integer- number without sign(not positive or negative).
+    2. integer- number either positive or negative.
+    3. boolean- either true or false.
+    4. Enum - defining option for value by name.
