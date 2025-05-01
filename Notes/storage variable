@@ -1,0 +1,24 @@
+Storage variable- it is a variable that is stored permanently on the blockchain.
+it is persistance for transaction to transaction.
+it also represent ownership.
+
+Storage slots
+ 1. variable stored in contract scope allocate a storage slot.
+ 2. slots ade 32 bytes.
+ 3. solidity stores variables contiguously.
+ 4. reading/writing to storage is relatively super expensive to other Opcodes.
+ 5. variables can be packed together, automatically or manually.
+
+
+ constructor function is invoked only once during the contract's deployment and never again.
+ It is used fo setting up intial contract value
+
+
+ there are 4 function type or visibility 
+ 1. private- call from within a contract.
+ 2. internal- call within contract + inheritance.
+ 3. public- call inside and outside contract.
+ 4. external- call from outside contract.
+
+
+ 
