@@ -1,1 +1,11 @@
 #Code 
+Practice data type
+pragma solidity ^0.8.20;
+
+contract Contract {
+	bool public myVar = true;
+
+     bool public a = true;
+     bool public b = false;
+ 
+}
