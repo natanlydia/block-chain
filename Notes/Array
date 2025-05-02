@@ -1,0 +1,10 @@
+Array 
+-Arrys are the first reference type.
+-Arrays act quite differently in storage vs memory/calldata.
+-Arrays aren't used as frequently as mapping.
+  -useful for ordered data or in need of iteration.
+  -unlimited size plus iteration can be aa DOS vector
+
+Referance type: string,bytes,arrays,mapping and structs.
+as an argument must declare the memory location, calldata, memory or storage.
+potentially passed by reference, as opposed to value type.
