@@ -1,0 +1,35 @@
+contract StackClub {
+    address[] public members;
+
+    // Constructor: add the deployer as the first member
+    constructor() {
+        members.push(msg.sender);
+    }
+
+    // Modifier to restrict access to members only
+    modifier onlyMember() {
+        require(isMember(msg.sender), "Not a member");
+        _;
+    }
+
+    // Add a new member (only if sender is already a member)
+    function addMember(address newMember) external onlyMember {
+        members.push(newMember);
+    }
+
+    // Remove the last member from the list (only if sender is a member)
+    function removeLastMember() external onlyMember {
+        require(members.length > 0, "No members to remove");
+        members.pop();
+    }
+
+    // Check if an address is a member
+    function isMember(address checkAddress) public view returns (bool) {
+        for (uint i = 0; i < members.length; i++) {
+            if (members[i] == checkAddress) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
