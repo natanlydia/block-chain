@@ -1,0 +1,4 @@
+Struct
+-group variable under single name.
+-cav be stored in different data location.
+-can go within othr struct, array, mapping.
