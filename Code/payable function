@@ -1,0 +1,6 @@
+import "forge-std/console.sol";
+contract Contract {
+    function pay() public payable {
+        console.log( msg.value );
+    }
+}
