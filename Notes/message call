@@ -1,0 +1,24 @@
+Message call
+Send value and calldata to contracts.
+first message call is the begining of transaction.
+each subsequent message call is part of the same transaction.
+the transaction and any state changes only complete when inital function call finishes execution.
+
+Address on the EVM is 160 bits long or 40 character, hexadecimal string.
+
+Message call breakdown
+message call can contain gas, value and calldata.
+these message value become available as global in solidity.
+  1.msg.sender- who made the last message call.
+  2.msg.value-amount in wei sent.
+  3.msg.data-calldata.
+  4.msg.sig-the function identifier.
+
+
+  How EOA and contract call other contracts 
+  1.they use the address of the contract they want to cammunicate with.
+  2.msg.sender is an address.
+
+
+  contracts can not receive ether by default , all payable methid can receive ether 
+  2.
