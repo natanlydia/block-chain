@@ -1,0 +1,14 @@
+Revert
+-we talk to a contract with message call.
+-a contract can REVERT a call, negating alll state changes.
+-each calling contract can choose to handle the success, or REVERT as well.
+
+message call
+-no state change occure.
+-no value is transfered.
+-no logs are emitted.
+-Gas is still spent.
+
+
+Revert("unauthoeized") is Gas efficient.
+Assert is used for things that should not happen.
