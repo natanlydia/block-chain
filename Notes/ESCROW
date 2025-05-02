@@ -1,0 +1,6 @@
+ESCROW smart contract
+Depositor-the payer of the ESCROW.
+         -make initial deposit that eventually goes to beneficiary.
+Beneficiary-the receiver of fund.
+          -provide service or goods.
+Arbitery-approver of the transaction.
