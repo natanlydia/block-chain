@@ -1,0 +1,12 @@
+constructor(address _arbiter, address _beneficiary) payable {
+        arbiter = _arbiter;
+        beneficiary = _beneficiary;
+        depositor = msg.sender;
+    }
+     function approve() external{
+       require(msg.sender == arbiter, "Only the arbiter can approve");
+
+       
+         payable(beneficiary).transfer(address(this).balance);
+     }
+}
