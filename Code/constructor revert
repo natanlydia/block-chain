@@ -1,0 +1,9 @@
+contract Contract {
+    address public owner;
+
+   
+    constructor() payable {
+        require(msg.value >= 1 ether, "Minimum 1 ether required");
+        owner = msg.sender;
+    }
+}
