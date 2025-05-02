@@ -1,0 +1,28 @@
+contract Contract {
+	uint configA;
+	uint configB;
+	uint configC;
+	address owner;
+
+	constructor() {
+		owner = msg.sender;
+	}
+
+	function setA(uint _configA) public onlyOwner {
+		configA = _configA;
+	}
+
+	function setB(uint _configB) public onlyOwner {
+		configB = _configB;
+	}
+
+	function setC(uint _configC) public onlyOwner {
+		configC = _configC;
+	}
+
+	// Modifier to restrict access to only the contract owner
+	modifier onlyOwner {
+		require(msg.sender == owner, "Only owner can call this function");
+		_;
+	}
+}
