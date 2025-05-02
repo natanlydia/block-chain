@@ -1,0 +1,7 @@
+Testing function
+
+calldata- how to target function 
+-solidity job is to compile contract to bytecode.
+-solidity doesn't know about chain it'd deployed on.
+-if solidity is told to call an address with calldata it will do that.
+this can be dome with both high-level and low-level syntax.
