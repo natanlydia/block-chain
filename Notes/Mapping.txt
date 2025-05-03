@@ -1,0 +1,4 @@
+A mapping is a key-value data structure used to store and retrieve data efficiently.
+Syntax: mapping(KeyType => ValueType) public myMap;
+Access: balances[msg.sender] — returns the value for the key.
+Mappings are not iterable and default to zero values.

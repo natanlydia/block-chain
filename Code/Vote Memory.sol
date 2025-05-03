@@ -1,0 +1,18 @@
+pragma solidity ^0.8.20;
+
+contract Contract {
+    enum Choices { Yes, No }
+
+    struct Vote {
+        Choices choice;
+        address voter;
+    }
+
+    // External view function that returns a Vote instance
+    function createVote(Choices choice) external view returns (Vote memory) {
+        return Vote({
+            choice: choice,
+            voter: msg.sender
+        });
+    }
+}
